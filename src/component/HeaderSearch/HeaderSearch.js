@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const HeaderSearch = ()=>{
+const HeaderSearch = ({onChange, handleClick})=>{
     return (
           <div className="header-search">
               <input 
@@ -9,8 +9,9 @@ const HeaderSearch = ()=>{
                 type="text" id="search" 
                 name="search" 
                 placeholder="Type a Repository name" 
+                onChange={onChange}
               />
-              <button>Search</button>
+              <button onClick={handleClick}>Search</button>
           </div>
     )
   }
