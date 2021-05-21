@@ -6,26 +6,22 @@ const ListItem = ({data})=>{
           <div className="main-list">
             <div className="list-item">
                 {
-                    data.map(item =>{
-                        return (
-                            <div className="item">
-                                <p className="item-title">{item.name}</p>
-                                <p className="item-desc">{item.description}</p>
-                            </div>
-                        )
-                    })
+                    data.length > 0 ? (
+                        data.map(item =>{
+                            return (
+                                <div className="item">
+                                    <p className="item-title">{item.name}</p>
+                                    <p className="item-desc">{item.description}</p>
+                                </div>
+                            )
+                        })
+                    ) : (
+                        <div className="item">
+                            <p className="item-title">There is no repositories yet.</p>
+                            <p className="item-desc">Make your first repositories yet.</p>
+                        </div>
+                    )
                 }
-
-              {/* <div className="item">
-                <p className="item-title">AJV-Validate</p>
-                <p className="item-desc">Use AJV to validate data</p>
-              </div>
-  
-              <div className="item">
-                <p className="item-title">AJV-Validate</p>
-                <p className="item-desc">Use AJV to validate data</p>
-              </div> */}
-  
             </div>
           </div>
     )
