@@ -18,7 +18,7 @@ const ListItem = ({data})=>{
                     ) : (
                         <div className="item">
                             <p className="item-title">There is no repositories to be shown yet.</p>
-                            <p className="item-desc">Make your first repositories yet or search another repository to be shown</p>
+                            <p className="item-desc">Make your first repositories yet or search another repository to be shown by type github username and click "Search" Button</p>
                         </div>
                     )
                 }
