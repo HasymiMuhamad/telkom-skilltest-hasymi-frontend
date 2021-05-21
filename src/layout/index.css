@@ -1,0 +1,60 @@
+.App {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .main-app {
+    width: 1000px;
+    /* background-color: teal; */
+    height: 720px;
+    
+  }
+  
+  .main-app h1 {
+    color: grey;
+  }
+  
+  .header-search {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-search {
+    margin-right: 20px;
+  }
+  
+  .main-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list-item {
+    width: 800px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    /* background-color: red; */
+  }
+  
+  .item {
+    width: 100%;
+    height: 90px;
+    /* background-color: purple; */
+    border-radius: 10px;
+    border: 3px solid #e1e4e8;
+    margin-bottom: 20px;
+  }
+  
+  .item-title {
+    color: #0366D6;
+    font-weight: bold;
+  }
