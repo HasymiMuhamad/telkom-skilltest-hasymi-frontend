@@ -10,15 +10,15 @@ const ListItem = ({data})=>{
                         data.map(item =>{
                             return (
                                 <div className="item">
-                                    <p className="item-title">{item.name}</p>
+                                    <p className="item-title"><a className="item-title-text" href={item.html_url}>{item.name}</a></p>
                                     <p className="item-desc">{item.description}</p>
                                 </div>
                             )
                         })
                     ) : (
                         <div className="item">
-                            <p className="item-title">There is no repositories yet.</p>
-                            <p className="item-desc">Make your first repositories yet.</p>
+                            <p className="item-title">There is no repositories to be shown yet.</p>
+                            <p className="item-desc">Make your first repositories yet or search another repository to be shown</p>
                         </div>
                     )
                 }

@@ -57,4 +57,9 @@
   .item-title {
     color: #0366D6;
     font-weight: bold;
-  }
+}
+
+.item-title-text {
+    text-decoration: none;
+    color: #0366D6;
+}

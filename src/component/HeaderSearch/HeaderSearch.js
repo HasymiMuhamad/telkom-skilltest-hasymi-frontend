@@ -8,7 +8,7 @@ const HeaderSearch = ({onChange, handleClick})=>{
                 className="input-search" 
                 type="text" id="search" 
                 name="search" 
-                placeholder="Type a Repository name" 
+                placeholder="Type a github username" 
                 onChange={onChange}
               />
               <button onClick={handleClick}>Search</button>
